@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html>
+  <head> <script src="https://unpkg.com/canvaskit-wasm@0.33.0/bin/canvaskit.js"></script>
+    <!-- Preload canvaskit.wasm -->
+    <link rel="preload" href="https://unpkg.com/canvaskit-wasm@0.33.0/bin/canvaskit.wasm" as="fetch" crossOrigin="anonymous">
+  </head>
 <head>
 
   <base href="/">
@@ -19,13 +23,11 @@
 
   <title>portfolio</title>
   <link rel="manifest" href="manifest.json">
-
-  <!-- Preload canvaskit.wasm -->
-  <link rel="preload" href="https://unpkg.com/canvaskit-wasm@0.33.0/bin/canvaskit.wasm" as="fetch" crossOrigin="anonymous">
+  
+  <!-- Load canvaskit.js -->
+ 
 </head>
 <body>
-  <!-- Load canvaskit.js -->
-  <script src="https://unpkg.com/canvaskit-wasm@0.33.0/bin/canvaskit.js"></script>
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
